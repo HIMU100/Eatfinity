@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Food Sharing - Eatfinity</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="community.css" rel="stylesheet"> <!-- Link to community-specific CSS -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <a class="navbar-brand" href="#">Eatfinity</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="grocery.html">Grocery Scanning</a></li>
+            <li class="nav-item"><a class="nav-link" href="recipe.html">Recipe & Meal Planning</a></li>
+            <li class="nav-item"><a class="nav-link active" href="community.html">Community Food Sharing</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">Community Food Sharing</h1>
+    <p class="text-center">Share your excess food with others in your community.</p>
+
+    <!-- Donation Form -->
+    <form id="donationForm" class="mb-4 text-center">
+        <div class="form-row justify-content-center">
+            <div class="col-md-3 mb-3">
+                <input type='text' id='foodItem' placeholder='Food Item' class='form-control' required />
+            </div>
+            <div class="col-md-2 mb-3">
+                <input type='number' id='quantity' placeholder='Quantity' class='form-control' required />
+            </div>
+            <div class="col-md-3 mb-3">
+                <select id='foodQuality' class='form-control' required>
+                    <option value="" disabled selected>Select Quality</option>
+                    <option value='Good'>Good</option>
+                    <option value='Fair'>Fair</option>
+                    <option value='Poor'>Poor</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <select id='shelterSelect' class='form-control' required>
+                    <!-- Shelters will be populated here -->
+                </select>
+            </div>
+            <div class="col-md-2 mb-3">
+                <button type='submit' class='btn btn-success btn-block'>List Donation</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Display Donations -->
+    <h2>Available Donations</h2>
+    <ul id='donationList' class='list-group'></ul>
+
+    <!-- Rating System -->
+    <h2>Rate Donations</h2>
+    <div id='ratingSection' class='mb-4'>
+        <!-- Star rating system will be generated here -->
+        <span id='starRating'></span>
+        <p id='ratingMessage'></p>
+    </div>
+
+    <!-- Nearby Shelters Section -->
+    <h2>Nearby Shelters & Donation Centers</h2>
+    <ul id='shelterListDisplay' class='list-group mb-4'></ul>
+
+    <!-- Metrics Section -->
+    <h2>Food Waste Reduction Metrics</h2>
+
+    <!-- Total Food Saved -->
+    <div id='totalFoodSaved'>
+        <p>Total Food Saved: 10,000 pounds (equivalent to 8,000 meals)</p>
+        <!-- Progress bar or dynamic counter can be added here -->
+        <!-- Example progress bar -->
+        <div class="progress mb-4">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+        </div>
+    </div>
+
+    <!-- Amount of Food Donated -->
+    <div id='foodDonated'>
+        <p>Amount of Food Donated: 3,500 meals this week to local shelters.</p>
+        <!-- Leaderboard or heatmap-like display can be added here -->
+        <!-- Example leaderboard -->
+        <ul class='list-group'>
+            <li class='list-group-item'>Shelter A: 1,200 meals</li>
+            <li class='list-group-item'>Shelter B: 900 meals</li>
+            <li class='list-group-item'>Food Bank C: 800 meals</li>
+            <li class='list-group-item'>Community Kitchen D: 600 meals</li>
+        </ul>
+    </div>
+
+    <!-- Food Waste Reduction Percentage -->
+    <!-- Circular progress chart or similar visualization can be added here -->
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 mb-3">
+        <p>&copy; 2024 Eatfinity. All rights reserved.</p>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src='community.js'></script> <!-- Link to community-specific JS -->
+
+<!-- Additional scripts for charts and dynamic updates can be added here -->
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background-color: #f0f4f8; /* Light background for better contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    padding: 30px; /* Increased padding for a spacious feel */
+}
+
+.container h1 {
+    color: #343a40;
+}
+
+.container h2 {
+    margin-top: 30px;
+    color: #007bff;
+}
+
+.input-group {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group input {
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #28a745; /* Green focus border */
+}
+
+.list-group-item {
+    transition: background-color 0.3s, transform 0.2s, opacity 0.5s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef; /* Light gray on hover */
+}
+
+footer {
+    border-top: 1px solid #dee2e6;
+}
+
+.btn-danger {
+    display: block;
+    margin: 20px auto;
+}
+
+/* New styles for better aesthetics */
+input[type=text]::placeholder {
+   color: #6c757d; /* Placeholder color */
+   opacity: 1; /* Firefox lowers the opacity */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+   .input-group {
+       width: 100%;
+   }
+}
+
+/* Color-coded status indicators */
+.expired {
+   color: red;
+}
+.near-expiry {
+   color: orange;
+}
+.fresh {
+   color: blue;
+}
