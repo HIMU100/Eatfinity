@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatfinity - Smart Food Pantry & Community Food Sharing</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="eatfinity.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <a class="navbar-brand" href="#">Eatfinity</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grocery.html">Grocery Scanning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recipe.html">Recipe & Meal Planning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="community.html">Community Food Sharing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quality.html">Feedback & Quality Assurance</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero bg-primary text-white text-center py-5">
+        <h1>Welcome to Eatfinity</h1>
+        <p>Your smart solution for food management and community sharing</p>
+        <a href="#" class="btn btn-light btn-lg mt-3">Get Started</a>
+    </header>
+
+    <div class="container mt-5 mb-5">
+        <div class="text-center mb-4">
+            <h2>Impact Statistics</h2>
+            <p>Total Meals Donated: 500</p>
+            <p>Amount of Food Saved: 2000 lbs</p>
+            <p>Number of Users Participating: 1500</p>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-6 mb-4">
+                <div class="card border-primary shadow-sm">
+                    <div class="card-body">
+                        <h2>Smart Food Pantry</h2>
+                        <ul class="feature-list list-unstyled mt-3 mb-4">
+                            <li><i class="fas fa-barcode"></i> Grocery Scanning</li>
+                            <li><i class="fas fa-utensils"></i> Recipe Suggestions & Meal Planning</li>
+                            <li><i class="fas fa-microphone"></i> Voice Commands</li>
+                            <li><i class="fas fa-bell"></i> Notifications</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="scanGrocery()">Try Grocery Scanning</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card border-success shadow-sm">
+                    <div class="card-body">
+                        <h2>Community Food Sharing</h2>
+                        <ul class="feature-list list-unstyled mt-3 mb-4">
+                            <li><i class="fas fa-map-marker-alt"></i> Geolocation Feature</li>
+                            <li><i class="fas fa-hand-holding-heart"></i> Donation Listings</li>
+                            <li><i class="fas fa-star"></i> Food Rating System</li>
+                            <li><i class="fas fa-clock"></i> Scheduling and Notifications</li>
+                        </ul>
+                        <button class="btn btn-success" onclick="showNearbyDonations()">Find Nearby Donations</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-5 mb-3">
+            <p>&copy; 2024 Eatfinity. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='eatfinity.js'></script>
+
+</body>
+</html>

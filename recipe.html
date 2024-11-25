@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe & Meal Planning - Eatfinity</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="recipe.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <a class="navbar-brand" href="#">Eatfinity</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="grocery.html">Grocery Scanning</a></li>
+            <li class="nav-item"><a class="nav-link active" href="recipe.html">Recipe & Meal Planning</a></li>
+            <li class="nav-item"><a class="nav-link" href="community.html">Community Food Sharing</a></li>
+            <li class="nav-item"><a class="nav-link" href="quality.html">Impact and Quality Assurance</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">Recipe Suggestions & Meal Planning</h1>
+    <p class="text-center">Enter your dietary requirements to find suitable recipes and plan your meals.</p>
+
+    <form id="dietaryForm" class="mb-4 text-center">
+        <div class="form-row justify-content-center">
+            <div class="col-md-3 mb-3">
+                <input type="number" id="maxCalories" placeholder="Max Calories" class="form-control" required />
+            </div>
+            <div class="col-md-3 mb-3">
+                <input type='text' id='allergies' placeholder='Allergies (comma-separated)' class='form-control' />
+            </div>
+            <div class="col-md-3 mb-3">
+                <button type='submit' class='btn btn-primary btn-block'>Get Recipes</button>
+            </div>
+        </div>
+    </form>
+
+    <h2>Suggested Recipes</h2>
+    <div id='recipeList' class='row'></div>
+
+    <h2>Meal Planning Dashboard</h2>
+    <form id='mealPlanForm' class='mb-4'>
+        <div class='form-row justify-content-center'>
+            <div class='col-md-4 mb-3'>
+                <input type='text' id='mealName' placeholder='Meal Name' class='form-control' required />
+            </div>
+            <div class='col-md-4 mb-3'>
+                <input type='date' id='mealDate' class='form-control' required />
+            </div>
+            <div class='col-md-2 mb-3'>
+                <button type='submit' class='btn btn-success btn-block'>Add to Meal Plan</button>
+            </div>
+        </div>
+    </form>
+
+    <h2>Your Meal Plan</h2>
+    <ul id='mealPlanList' class='list-group'></ul>
+
+    <footer class="text-center mt-5 mb-3">
+        <p>&copy; 2024 Eatfinity. All rights reserved.</p>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src='recipe.js'></script> 
+
+</body>
+</html>

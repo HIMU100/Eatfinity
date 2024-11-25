@@ -1,0 +1,48 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.container h1 {
+    color: #343a40;
+}
+
+.container h2 {
+    margin-top: 30px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.footer {
+    border-top: 1px solid #dee2e6;
+}
+
+
+@media (max-width: 576px) {
+    .input-group {
+        width: 100%; 
+    }
+}

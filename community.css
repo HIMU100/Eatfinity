@@ -1,0 +1,58 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.container h1 {
+    color: #343a40;
+}
+
+.container h2 {
+    margin-top: 30px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef; 
+}
+
+footer {
+    border-top: 1px solid #dee2e6;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.red-indicator {
+   color: red;
+   font-weight: bold;
+}
+
+.yellow-indicator {
+   color: orange;
+   font-weight: bold;
+}
+
+.green-indicator {
+   color: green;
+   font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .input-group {
+        width: 100%; 
+    }
+}

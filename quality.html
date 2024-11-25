@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact and Quality Assurance - Eatfinity</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="quality.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <a class="navbar-brand" href="#">Eatfinity</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grocery.html">Grocery Scanning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recipe.html">Recipe & Meal Planning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="community.html">Community Food Sharing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quality.html">Feedback & Quality Assurance</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <h1 class="text-center">Impact and Quality Assurance</h1>
+        <p class="text-center">Track your donations and grocery rescues!</p>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2>Your Donations</h2>
+                <p class="lead">Total Donations: <span id="totalDonations">0</span> items</p>
+                <p class="lead">Points Earned: <span id="pointsEarned">0</span></p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h2>Your Grocery Rescues</h2>
+                <p class="lead">Total Rescued: <span id="totalRescued">0</span> items</p>
+            </div>
+        </div>
+
+        <h2>Food Waste Breakdown</h2>
+        <canvas id="wasteBreakdownChart" width="400" height="200"></canvas>
+
+        <footer class="text-center mt-5 mb-3">
+            <p>&copy; 2024 Eatfinity. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="quality.js"></script>
+</body>
+</html>
